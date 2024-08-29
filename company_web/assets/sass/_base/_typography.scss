@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--prompt);
+	color: var(--paragraph);
+	background-color: var(--white);
+	line-height: 28px;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: var(--heading-color);
+	font-family: var(--prompt);
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 85px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 52px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+}
+
+h6 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 28px;
+	font-size: 16px;
+}
+
+span {
+	display: inline-block;
+	color: var(--span);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: var(--heading-color);
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--heading-color);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+::placeholder {
+	color: var(--span);
+}
+
+::selection {
+	color: var(--white);
+	background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--border);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background-clip: content-box;
+}
+// typography area end here ***
+
+// custom class area start here ***
+.section-padding {
+	padding: 130px 0px;
+}
+
+.pt-30 {
+	padding-top: 30px;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
+}
+
+.pt-40 {
+	padding-top: 40px;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pt-65 {
+	padding-top: 65px;
+}
+
+.pb-65 {
+	padding-bottom: 65px;
+}
+
+.section-margin {
+	margin: 130px 0px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mt-65 {
+	margin-top: 65px;
+}
+
+.mb-65 {
+	margin-bottom: 65px;
+}
+
+.bor {
+	border: 1px solid var(--border);
+}
+
+.bor-top {
+	border-top: 1px solid var(--border);
+}
+
+.bor-left {
+	border-left: 1px solid var(--border);
+}
+
+.bor-bottom {
+	border-bottom: 1px solid var(--border);
+}
+
+.bor-right {
+	border-right: 1px solid var(--border);
+}
+
+.border-none {
+	border: none !important;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.image {
+	img {
+		width: 100%;
+	}
+}
+
+.primary-color {
+	color: var(--primary-color) !important;
+}
+
+.primary-bg {
+	background-color: var(--primary-color) !important;
+}
+
+.secondary-bg {
+	background-color: var(--secondary-color);
+}
+
+.sub-bg {
+	background-color: var(--sub-bg);
+}
+
+.sm-font {
+	font-size: 14px;
+}
+
+.bg-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay50 {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(14, 14, 14, 0.5);
+	}
+}
+
+.overlay60 {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(14, 14, 14, 0.6);
+	}
+}
+
+.overlay70 {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(14, 14, 14, 0.7);
+	}
+}
+
+.overlay80 {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(14, 14, 14, 0.8);
+	}
+}
+// custom class area end here ***

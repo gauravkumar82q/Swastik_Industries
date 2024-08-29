@@ -1,0 +1,196 @@
+// Animation of the zoom in zoom out area start here***
+.zoom-in-zoom-out {
+	animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+// Animation of the zoom in zoom out area end here***
+
+//  Animation of the video button area start here ***
+@-webkit-keyframes video-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
+@keyframes video-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+//  Animation of the video button end here ***
+
+//  Animation of the 360 deg rotete start here ***
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.star-rotare {
+	animation: rotate 30s infinite linear;
+}
+//  Animation of the 360 deg rotete end here ***
+
+//  Animation of the bob x start here ***
+@-webkit-keyframes float-bob-x {
+	0% {
+		transform: translateX(-30px);
+	}
+
+	50% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		transform: translateX(-30px);
+	}
+}
+
+@keyframes float-bob-x {
+	0% {
+		transform: translateX(-30px);
+	}
+
+	50% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		transform: translateX(-30px);
+	}
+}
+
+.float-bob-x {
+	-webkit-animation-name: float-bob-x;
+	animation-name: float-bob-x;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+//  Animation of the bob x end here ***
+
+//  Animation of the bob y end here ***
+@-webkit-keyframes float-bob-y {
+	0% {
+		transform: translateY(-30px);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes float-bob-y {
+	0% {
+		transform: translateY(-30px);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(-30px);
+	}
+}
+
+.float-bob-y {
+	-webkit-animation-name: float-bob-y;
+	animation-name: float-bob-y;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+//  Animation of the bob y end here ***
+
+//  Animation of the ring rotete start here ***
+@keyframes ring-animation {
+	from {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	20%,
+	32%,
+	44%,
+	56%,
+	68% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	23%,
+	35%,
+	47%,
+	59%,
+	71% {
+		transform: rotate3d(0, 0, 1, 15deg);
+	}
+	26%,
+	38%,
+	50%,
+	62%,
+	74% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	29%,
+	41%,
+	53%,
+	65%,
+	77% {
+		transform: rotate3d(0, 0, 1, -15deg);
+	}
+	80% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+.ring-animation {
+	animation: ring-animation 1.5s ease-in-out infinite;
+}
+//  Animation of the ring rotete end here ***
+
+//  Animation of the scale start here ***
+@keyframes scale-animation {
+	0% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.scale-animation {
+	animation: scale-animation 2s alternate infinite;
+}
+//  Animation of the scale end here ***

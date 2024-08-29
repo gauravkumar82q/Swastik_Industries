@@ -1,0 +1,20 @@
+// Progress bar area start here ***
+.experience-progress-wrapper {
+	.progress {
+		background-color: #ededed;
+		height: 10px;
+		border-radius: 100px;
+		.progress-bar {
+			background-color: var(--primary-color);
+		}
+	}
+	span {
+		color: var(--primary-color);
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.experience-title {
+		font-weight: 600;
+	}
+}
+// Progress bar area end here ***

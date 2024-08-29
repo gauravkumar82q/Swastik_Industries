@@ -1,0 +1,344 @@
+// Button one area start here ***
+.btn-one {
+	padding: 15px 25px;
+	background-color: var(--primary-color);
+	font-weight: 600;
+	color: var(--white);
+	transition: var(--transition);
+	clip-path: polygon(7% 0, 100% 0%, 93% 100%, 0% 100%);
+	position: relative;
+	i {
+		padding: 0 5px;
+		position: relative;
+	}
+	span {
+		position: relative;
+		color: var(--white);
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: var(--heading-color);
+		transition: var(--transition);
+	}
+	&:hover {
+		color: var(--white);
+		&::before {
+			width: 100%;
+		}
+	}
+}
+// Button one area end here ***
+
+// Button two area start here ***
+.btn-two {
+	padding: 15px 20px;
+	font-weight: 600;
+	color: var(--secondary-color);
+	transition: var(--transition);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	position: relative;
+	i {
+		padding: 0 5px;
+		position: relative;
+	}
+	span {
+		color: var(--heading-color);
+		position: relative;
+		transition: var(--transition);
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0%;
+		height: 100%;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-color: var(--primary-color);
+		border-radius: 6px;
+		transition: var(--transition);
+	}
+	&:hover {
+		color: var(--white);
+		span {
+			color: var(--white);
+		}
+		&::before {
+			width: 100%;
+			left: 0px;
+		}
+	}
+}
+// Button two area end here ***
+
+// Button three area start here ***
+.btn-three {
+	padding: 15px;
+	border: 1px solid var(--border);
+	font-weight: 500;
+	transition: var(--transition);
+	i {
+		padding: 0 5px;
+		color: var(--primary-color);
+	}
+	&:hover {
+		border: 1px solid var(--primary-color);
+		color: var(--primary-color);
+	}
+}
+// Button three area end here ***
+
+// Radio button area start here ***
+.radio-btn {
+	display: flex;
+	align-items: center;
+	p {
+		color: var(--span);
+		margin-left: 10px;
+		font-size: 14px;
+	}
+	span {
+		width: 20px;
+		height: 20px;
+		border: 1px solid var(--primary-color);
+		border-radius: 50%;
+		position: relative;
+		cursor: pointer;
+		&::after {
+			position: absolute;
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: var(--primary-color);
+			top: 6px;
+			left: 6px;
+		}
+	}
+	.radio-btn-active {
+		border: 1px solid var(--primary-color);
+		background-color: var(--primary-color);
+		&::after {
+			background-color: var(--white);
+		}
+	}
+}
+// Radio button area end here ***
+
+// Arry button area start here ***
+.arry-btn {
+	button {
+		text-align: center;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 24px;
+		border-radius: 50%;
+		border: 1px solid var(--border);
+		color: var(--border);
+		transition: var(--transition);
+		&:hover {
+			background-color: var(--primary-color);
+			color: var(--white);
+			border: 1px solid var(--primary-color);
+		}
+	}
+	.active {
+		background-color: var(--primary-color);
+		color: var(--white);
+		border: 1px solid var(--primary-color);
+	}
+}
+.arry-prev {
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	border-radius: 50%;
+	border: 1px solid var(--border);
+	color: var(--border);
+	transition: var(--transition);
+	&:hover {
+		background-color: var(--primary-color);
+		color: var(--white);
+		border: 1px solid var(--primary-color);
+	}
+}
+.arry-next {
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	border-radius: 50%;
+	transition: var(--transition);
+	background-color: var(--primary-color);
+	color: var(--white);
+	border: 1px solid var(--primary-color);
+}
+// Arry button area end here ***
+
+// Dots area start here ***
+.dot {
+	.swiper-pagination-bullet {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		transition: 0.6s;
+		background-color: transparent;
+		opacity: 1;
+		position: relative;
+		border: 1px solid var(--secondary-color);
+		&::before {
+			position: absolute;
+			content: "";
+			top: 4px;
+			left: 4px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: var(--secondary-color);
+			transition: 0.6s;
+		}
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		&::before {
+			background-color: var(--white);
+		}
+		border: 1px solid var(--white);
+	}
+}
+.dot.theme {
+	.swiper-pagination-bullet {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		transition: 0.6s;
+		background-color: transparent;
+		opacity: 1;
+		position: relative;
+		border: 1px solid #ababab;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 4px;
+			left: 4px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #ababab;
+			transition: 0.6s;
+		}
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		&::before {
+			background-color: var(--primary-color);
+		}
+		border: 1px solid var(--primary-color);
+	}
+}
+// Dots area end here ***
+
+// Video button area start here ***
+.video {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	z-index: 2;
+}
+.video a {
+	position: relative;
+	color: var(--primary-color);
+	font-size: 28px;
+	z-index: 1;
+	background-color: var(--white);
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	border-radius: 50%;
+	display: block;
+	transition: 0.4s;
+}
+.video-pulse::after,
+.video-pulse::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--white);
+	opacity: 0.7;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: video-animation;
+	animation-name: video-animation;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.video-pulse::before {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+// Video button area end here ***
+
+// Back to top button area start here ***
+.scroll-up {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px var(--border);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 25px;
+	bottom: 35px;
+	height: 50px;
+	width: 50px;
+	transition: var(--transition);
+	&::after {
+		position: absolute;
+		font-family: "Font Awesome 6 Free";
+		content: "\f30c";
+		text-align: center;
+		line-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+		color: var(--primary-color);
+		left: 0;
+		top: 0;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: var(--transition);
+	}
+	svg path {
+		fill: none;
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color);
+		stroke-width: 4px;
+		box-sizing: border-box;
+		transition: var(--transition);
+	}
+}
+.scroll-up.active-scroll {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+// Back to top button area end here ***

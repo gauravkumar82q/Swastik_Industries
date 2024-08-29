@@ -1,0 +1,28 @@
+// Define the container styles for 1170px width area start here ***
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// Media query for smaller screen sizes ***
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+//  Media query for even smaller screen sizes ***
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+// Media query for small screen sizes ***
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+}
+// Define the container styles for 1170px width area end here ***
