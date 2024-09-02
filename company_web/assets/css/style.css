@@ -5008,3 +5008,12 @@ footer .chat ul li a {
     padding-bottom: 5px;
   }
 }
+.made_logo{
+  display: flex;
+  font-size: 100px;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.made_logo_text{
+  font-size: 30px;
+}
