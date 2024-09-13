@@ -56,6 +56,16 @@ CSS TABLE OF CONTENTS
   outline: none;
 }
 
+
+@media (max-width: 768px) {
+  .header-section .logo img {
+      height: 30px; /* Adjust this value as needed */
+  }
+  .header-section .logo h3 {
+      margin-top: 5px;
+      font-size: 26px; /* Adjust this value as needed */
+  }
+}
 body {
   margin: 0;
   padding: 0;
