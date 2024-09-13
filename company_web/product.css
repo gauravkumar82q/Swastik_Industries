@@ -1,0 +1,75 @@
+/* General Styles */
+.related-products {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.related-products h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Ensures products wrap in mobile view */
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 0 1 48%;
+    /* Two items per row on desktop */
+    max-width: 38%;
+    /* Ensures the items do not grow beyond 48% width */
+}
+
+.product-item img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 0 1 100%;
+        /* One item per row on mobile */
+        max-width: 100%;
+    }
+
+    .products-container {
+        gap: 15px;
+        /* Reduce gap between products on mobile */
+    }
+}
